@@ -1,4 +1,4 @@
-##IMDB Movies API Project
+**IMDB Movies API Project**
 
 This project has been developed using Python 3.7.2 with Django 2.1.7 using Django Rest Framework. 
 SQLite database has been used for backend and it will be automatically created when applying migrations. 
@@ -6,7 +6,7 @@ SQLite database has been used for backend and it will be automatically created w
 The prerequisite is Mac OS with Python 3.7.2 installed. check your python version by running 
 "python3 -V" in command line. You can download the latest Python version here https://www.python.org/downloads/ 
 
-###Follow quick instructions below to launch the API endpoint
+**Follow quick instructions below to launch the API endpoint**
 
 1. Downloaded source code and get on to project directory location**
 
@@ -36,21 +36,21 @@ The prerequisite is Mac OS with Python 3.7.2 installed. check your python versio
         >> ./manage.py runserver
 
 
-###Usage
+**Usage**
 
 The API's can be accessed directly from browser, by going to http://127.0.0.1:8000/. The landing page displayed sophisticated API documentation which provides detailed guidelines and testing tools.
 
 
-####API End Points
+**API End Points**
 
-#####Load CSV Movie Data
+**Load CSV Movie Data**
 
 Request Method: POST
 Content-Type:   text/csv 
 End Point:      /imdb/api/movies/ 
 Example:        http://127.0.0.1:8000/imdb/api/movies/
 
-#####Search Movies By Year
+**Search Movies By Year**
 
 Request Method: GET 
 End Points:     /imdb/api/movies/year
@@ -61,7 +61,7 @@ Example:
                 http://127.0.0.1:8000/imdb/api/movies/year/2010
                 http://127.0.0.1:8000/imdb/api/movies/year/2010/2016
 
-#####Search Movies By Genre
+**Search Movies By Genre**
 
 Request Method: GET
 End points:     /imdb/api/movies/genre
@@ -71,13 +71,13 @@ Example:
                 http://127.0.0.1:8000/imdb/api/movies/genre/comedy
 
 
-###PEP8 Coding standards check
+**PEP8 Coding standards check**
 
 You can run the following command to check code quality score. 
 
     >> pylint --load-plugins pylint_django api/
 
-###Execute Unit Testing and Run Code Coverage percentage
+**Execute Unit Testing and Run Code Coverage percentage**
 
     >> coverage run --source='.' manage.py test api
 
