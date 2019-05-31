@@ -44,32 +44,36 @@ The API's can be accessed directly from browser, by going to http://127.0.0.1:80
 ## API End Points
 
 ### Load CSV Movie Data
-
+```
 Request Method: POST
 Content-Type:   text/csv 
 End Point:      /imdb/api/movies/ 
 Example:        http://127.0.0.1:8000/imdb/api/movies/
-
+```
 ### Search Movies By Year
-
+```
 Request Method: GET 
 End Points:     /imdb/api/movies/year
                 /imdb/api/movies/year/{start_year}
                 /imdb/api/movies/year/{start_year}/{end_year}
+```
+```
 Example:
                 http://127.0.0.1:8000/imdb/api/movies/year
                 http://127.0.0.1:8000/imdb/api/movies/year/2010
                 http://127.0.0.1:8000/imdb/api/movies/year/2010/2016
-
+```
 ### Search Movies By Genre
-
+```
 Request Method: GET
 End points:     /imdb/api/movies/genre
                 /imdb/api/movies/genre/{genre}
+```
+```
 Example:        
                 http://127.0.0.1:8000/imdb/api/movies/genre
                 http://127.0.0.1:8000/imdb/api/movies/genre/comedy
-
+```
 
 ### PEP8 Coding standards check
 
